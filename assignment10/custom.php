@@ -2,7 +2,7 @@
 	include "top.php";
 ?>
 
-<h1>Custom Computers</h1>
+<h1 class="page_title">Custom Computers</h1>
 
 <p>Please select what type of custom PC you are looking for.</p>
 

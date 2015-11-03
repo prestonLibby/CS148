@@ -2,7 +2,7 @@
 	include "top.php";
 ?>
 
-<h1>Computer Repairs</h1>
+<h1 class="page_title">Computer Repairs</h1>
 
 <p>
 	We do repairs for desktops, laptops, netbooks, gaming consoles and more. Please fill out the following form to submit an inquiry

@@ -2,7 +2,7 @@
 	include "top.php";
 ?>
 
-<h1>About Pretorious Computers</h1>
+<h1 class="page_title">About Pretorious Computers</h1>
 
 <h2>My background</h2>
 

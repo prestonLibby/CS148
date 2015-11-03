@@ -3,12 +3,8 @@
 	background-color: #191919;
 }
 
-.page_title {
-	clear: both;
-}
-
 html {
-	background: url("https://plibby.w3.uvm.edu/cs148develop/assignment10/images/grey_squares.png");
+	background: url("");
 }
 
 body {
@@ -22,11 +18,6 @@ nav, nav ul {
 	width: 100%;
 }
 
-nav ul {
-	list-style: none;
-}
-
 nav ul li{
 	float: left;
-	padding-left: 1em;
 }

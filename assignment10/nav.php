@@ -13,7 +13,7 @@
 		</li>
 		
 		<li>
-			<a href = "maintenance.php">Computer Maintenance Services</a>
+			<a href = "maintenance.php">Computer Maintenance</a>
 		</li>
 		
 		<li>

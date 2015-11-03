@@ -2,7 +2,7 @@
 	include "top.php";
 ?>
 
-<h1>Computer Maintenance Services</h1>
+<h1 class="page_title">Computer Maintenance Services</h1>
 
 <p>
 	We offer various computer maintenance services including cleaning of the computer's hard drive and operating system
