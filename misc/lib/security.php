@@ -22,15 +22,15 @@ function securityCheck($path_parts, $yourURL, $form = false) {
     $whiteListPages[] = "index.php";
     $whiteListPages[] = "populate-table.php";
     $whiteListPages[] = "populate-enrolled.php";
-	$whiteListPages[] = "select.php";
+	$whiteListPages[] = "friday.php";
 
     //add all the folders to this array
     $whiteListFolders = array();
     $whiteListFolders[] = "/cs148";
     $whiteListFolders[] = "/cs148develop/assignment1.0";
 	$whiteListFolders[] = "/cs148/assignment1.0";
-	$whiteListFolders[] = "/cs148develop/assignment2.0";
-	$whiteListFolders[] = "/cs148/assignment2.0";
+	$whiteListFolders[] = "/cs148develop/misc";
+	$whiteListFolders[] = "/cs148/misc";
 
 
     // Check for valid page name

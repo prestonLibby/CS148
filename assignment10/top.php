@@ -9,12 +9,52 @@
 		<meta name = "keywords" content = "gaming, desktops, computers, repair, custom, workstation, cleaning, maintenance">
 		
 		<link rel = "stylesheet" type = "text/css" href = "default.css">
-	</head>
 	
 	<?php
-		include "header.php";
-		include "nav.php";
+               $debug = false;
+        
+               include 'lib/custom-functions.php';
+
+               $_SERVER = filter_input_array(INPUT_SERVER, FILTER_SANITIZE_STRING);
+                    foreach ($_SERVER as $key => $value) {
+                        $_SERVER[$key] = sanitize($value, false);
+                    }
+			// %^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%
+			//
+			// PATH SETUP
+                $domain = "//"; // let the server set http or https as needed
+                
+                $server = htmlentities($_SERVER['SERVER_NAME'], EN_QUOTES, "UTF-8");
+                
+                $domain .= $server;
+                
+                $phpSelf = htmlentities($_SERVER['PHP_SELF'], ENT_QUOTES, "UTF-8");
+                
+                $path_parts = pathinfo($phpSelf);
+                
+                if ($debug){
+                    print "<p>Domain" . $domain;
+                    print "<p>php Self" . $phpSelf;
+                    print "<p>Path Parts<pre>";
+                    print_r($path_parts);
+                    print "</pre>";
+                }
+
+			// %^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%
+			//
+			// inlcude all libraries
+			//
+			    require_once('lib/security.php');
+			    if ($path_parts['filename'] == "form") {
+			        include "lib/validation-functions.php";
+			        include "lib/mail-message.php";
+			    }
+                
+        ?>
+        </head>
+        <?php
+                print "<body>";
+                include 'header.php';
+                include 'nav.php';
 	?>
-	
-	<body>
 	

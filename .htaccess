@@ -1,0 +1,6 @@
+<Files *>
+AuthType WebAuth
+require user plibby
+satisfy any
+order allow,deny
+</Files>
